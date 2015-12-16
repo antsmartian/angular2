@@ -43,7 +43,7 @@ gulp.task('angular2', function() {
 gulp.task('ts2js', function () {
     var typescript = require('gulp-typescript');
     var tscConfig = require('./tsconfig.json');
-
+ 
     var tsResult = gulp
         .src(PATHS.src)
         .pipe(typescript(tscConfig.compilerOptions));

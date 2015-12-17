@@ -1,9 +1,7 @@
-import {Component, View} from 'angular2/angular2';
+import {Component, View} from 'angular2/core';
 
 @Component({
-    selector: 'app'
-})
-@View({
+    selector: 'app',
     template: `
   <div>
       <nav class="navbar navbar-default">
@@ -21,7 +19,7 @@ import {Component, View} from 'angular2/angular2';
       </nav>
 
       <div>
-        <router-outlet></router-outlet>
+        <center>Here goes content</center>
       </div>
   </div>
   `

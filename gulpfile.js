@@ -10,6 +10,7 @@ var PATHS = {
         'node_modules/zone.js/dist/long-stack-trace-zone.js',
         '!node_modules/systemjs/dist/*.src.js',
         'node_modules/systemjs/dist/*.js'
+        //'/node_modules/rxjs/*/**.js'
     ],
     dist: 'dist',
     distLib: 'dist/lib',

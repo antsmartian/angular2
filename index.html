@@ -12,6 +12,7 @@
 </body>
 
 <!-- ES6-related imports -->
+<script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
 <script src="/node_modules/es6-shim/es6-shim.min.js"></script>
 <script src="/node_modules/systemjs/dist/system.js"></script>
 
@@ -24,9 +25,16 @@
         }
     });
 
+</script>
+
+<script src="/node_modules/rxjs/bundles/Rx.js"></script>
+<script src="/node_modules/rxjs/bundles/Rx.js"></script>
+<script src="node_modules/rxjs/observable/fromArray.js"></script>
+<script src="/node_modules/angular2/bundles/angular2.min.js"></script>
+
+<script>
     //bootstrap the Angular2 application
     System.import('dist/bootstrap').catch(console.log.bind(console));
 </script>
-<script src="/node_modules/angular2/bundles/angular2.min.js"></script>
 
 </html>

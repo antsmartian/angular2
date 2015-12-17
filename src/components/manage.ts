@@ -1,5 +1,5 @@
-import {Component, View, NgFor} from 'angular2/angular2';
-import {FORM_PROVIDERS, FORM_DIRECTIVES, FormBuilder} from 'angular2/angular2';
+import {Component, View} from 'angular2/core';
+import {NgFor,FORM_PROVIDERS, FORM_DIRECTIVES, FormBuilder} from 'angular2/common';
 
 import {CourseDetailsService} from '../services/course';
 
@@ -12,12 +12,12 @@ import {CourseDetailsService} from '../services/course';
     template: `
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
-      <form [ng-form-model]="trackerForm" style="margin-bottom: 5px;" (submit)="add()">
-        <input ng-control="courseId" class="form-control" type="text" placeholder="Add Course Link" />
+      <form [ngFormModel]="trackerForm" style="margin-bottom: 5px;" (submit)="add()">
+        <input ngControl="courseId" class="form-control" type="text" placeholder="Add Course Link" />
       </form>
       <table class="table-bordered" style="width: 100%;">
         <tbody>
-          <tr *ng-for="#course of courses">
+          <tr *ngFor="#course of courses">
             <td>{{course}}</td>
             <td style="padding-top: 6px;">
               <button class="btn btn-danger" (click)="remove(course)">Remove</button>

@@ -1,4 +1,5 @@
-import {Component, View , Directive, NgIf, NgFor} from 'angular2/angular2';
+import {Component, View , Directive } from 'angular2/core';
+import {NgIf, NgFor} from 'angular2/common'
 import {CourseDetailsService} from '../services/course';
 import {Card} from './card'
 
@@ -10,11 +11,11 @@ import {Card} from './card'
     directives: [NgIf, NgFor,Card],
     template: `
     <div class="row">
-      <div class="col-md-12" *ng-if="courses.length === 0" style="text-align: center;">
+      <div class="col-md-12" *ngIf="courses.length === 0" style="text-align: center;">
         Loading . . . Please wait
       </div>
-      <div class="col-md-4" *ng-for="#course of courses">
-        <Card [courseDetails]="course"></Card>
+      <div class="col-md-4" *ngFor="#course of courses">
+        <Card (courseDetails)="course"></Card>
         <br />
       </div>
     </div>

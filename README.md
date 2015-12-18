@@ -18,4 +18,4 @@ After completing installation type in your favourite shell:
 
 ##Thanks
 
-The project is built on top of the cloned repo [ng2-play](https://github.com/pkozlowski-opensource/ng2-play).
+The project's base structure is inspired from [ng2-play](https://github.com/pkozlowski-opensource/ng2-play).

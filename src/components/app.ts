@@ -11,9 +11,7 @@ import {Manage} from './manage';
 ])
 
 @Component({
-    selector: 'app'
-})
-@View({
+    selector: 'app',
     directives: [RouterOutlet, RouterLink],
     template: `
   <div>

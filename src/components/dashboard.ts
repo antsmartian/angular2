@@ -1,9 +1,9 @@
-import {Component, View} from 'angular2/angular2';
+import {Component, View} from 'angular2/core';
 
 @Component({
     selector: 'manage',
     template: `
-        <h1>Rendering dashboard </h1>
+        <center>Rendering dashboard </center>
     `
 })
 export class Dashboard {

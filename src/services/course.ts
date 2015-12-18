@@ -41,7 +41,6 @@ export class CourseDetailsService {
     }
 
     load() {
-        console.log(Observable.fromArray)
         return Observable.fromArray(courses).concatMap(this.httpGet.bind(this));
     }
 }

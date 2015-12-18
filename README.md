@@ -1,6 +1,6 @@
-# ng2-play.ts
+# Angular2 Application
 
-A minimal [Angular2](https://angular.io/) playground using [TypeScript](http://www.typescriptlang.org/) and [SystemJS loader](https://github.com/systemjs/systemjs)
+An course tracker application that is built on [Angular2](https://angular.io/) playground using [TypeScript](http://www.typescriptlang.org/) and [SystemJS loader](https://github.com/systemjs/systemjs)
 
 ## Install
 
@@ -13,4 +13,9 @@ Clone this repo and execute in your favourite shell:
 
 After completing installation type in your favourite shell:
 
-* `gulp play` to start a "Hello World" app in a new browser window. App files are observed and will be re-transpiled on each change.
+* `gulp play` to start the app in a new browser window. App files are observed and will be re-transpiled on each change.
+
+
+##Thanks
+
+The project's base structure is inspired from [ng2-play](https://github.com/pkozlowski-opensource/ng2-play).

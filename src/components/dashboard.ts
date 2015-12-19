@@ -3,6 +3,7 @@ import {CourseDetailsService} from '../services/course';
 
 @Component({
     selector: 'dashboard',
+    providers: [CourseDetailsService],
     template: `
         <center>Rendering dashboard </center>
     `

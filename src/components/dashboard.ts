@@ -3,7 +3,6 @@ import {CourseDetailsService} from '../services/course';
 
 @Component({
     selector: 'dashboard',
-    viewBindings: [CourseDetailsService],
     template: `
         <center>Rendering dashboard </center>
     `

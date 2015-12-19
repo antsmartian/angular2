@@ -27,7 +27,7 @@ export class CourseDetailsService  {
 
         return this.http.get(url,{
             headers : headers
-        }).map(res => res)
+        }).map(res => res.json())
     }
 
     load() {

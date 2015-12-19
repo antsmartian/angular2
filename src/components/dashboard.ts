@@ -11,7 +11,7 @@ import {CourseDetailsService} from '../services/course';
 export class Dashboard {
     constructor(service: CourseDetailsService) {
         service.load().subscribe(courseDetails => {
-            courseDetails = courseDetails.json();
+            courseDetails = courseDetails;
             console.log(courseDetails)
         })
     }

@@ -4,8 +4,8 @@ import {CourseDetailsService} from '../services/course';
 @Component({
     selector: 'dashboard',
     viewBindings: [CourseDetailsService],
-    template : `
-        <h1>Rendering dashboard</h1>
+    template: `
+        <center>Rendering dashboard </center>
     `
 })
 export class Dashboard {

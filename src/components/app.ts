@@ -1,4 +1,4 @@
-import {Component, View} from 'angular2/angular2';
+import {Component, View} from 'angular2/core';
 
 import {RouteConfig, Router, RouterOutlet, RouterLink} from 'angular2/router';
 
@@ -11,9 +11,7 @@ import {Manage} from './manage';
 ])
 
 @Component({
-    selector: 'app'
-})
-@View({
+    selector: 'app',
     directives: [RouterOutlet, RouterLink],
     template: `
   <div>
@@ -24,13 +22,12 @@ import {Manage} from './manage';
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" [router-link]="['/Dashboard']">Dashboard</a></li>
-                <li><a [router-link]="['/Manage']">Add/Delete</a></li>
+                <li><a href="#" [routerLink]="['/Dashboard']">Dashboard</a></li>
+                <li><a href="#" [routerLink]="['/Manage']">Add/Delete</a></li>
               </ul>
             </div>
           </div>
       </nav>
-
       <div>
         <router-outlet></router-outlet>
       </div>

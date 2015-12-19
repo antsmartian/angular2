@@ -1,5 +1,9 @@
-import { Inject ,Observable } from 'angular2/angular2';
+import { Inject}  from 'angular2/core';
+import {Observable} from 'rxjs/Observable';
 import { Http ,Headers , HTTP_PROVIDERS } from 'angular2/http';
+import 'rxjs/add/observable/fromArray';
+import 'rxjs/add/operator/concatMap';
+import 'rxjs/add/operator/map';
 
 const URL : string = 'https://www.udemy.com/api-2.0/courses/';
 const AUTH : string = 'M1VBWGRRSG9qZkNqMlphQXk5Wmd3TjN5bkVxSm5BeVNWVGhVaTNGajpLOVZRTFVtUXFFem94SzhVQ3pWaWZNdnlYWDNWZ1BZdUhRV01jWmVLdE1HbWd4QURKQTFXQnUyb2piMHhqZTRPdjNPNnF4QkFGVWEzcGVqQWZYTENiQ1FzMHhPTFZhRDR1WDhJRGRXdDJZdW14WXFrV1NPek45MU1qenVCVzdsYg=='
@@ -26,7 +30,7 @@ export class CourseDetailsService {
     }
 
     httpGet(url) {
-        //add HTTP Basic auth
+        //add  HTTP asic auth
         var headers = new Headers();
         headers.append('Authorization', 'Basic ' + AUTH);
 

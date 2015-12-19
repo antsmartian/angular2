@@ -5,7 +5,7 @@ import {Card} from './card'
 
 @Component({
     selector: 'dashboard',
-    viewBindings: [CourseDetailsService]
+    providers: [CourseDetailsService]
 })
 @View({
     directives: [NgIf, NgFor,Card],

@@ -1,4 +1,4 @@
-import {Component, View from 'angular2/core';
+import {Component, View} from 'angular2/core';
 import {CourseDetailsService} from '../services/course';
 import {NgIf, NgFor} from 'angular2/common'
 

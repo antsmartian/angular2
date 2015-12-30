@@ -15,7 +15,7 @@ import {Card} from './card'
         Loading . . . Please wait
       </div>
       <div class="col-md-4" *ngFor="#course of courses">
-        <Card (courseDetails)="course"></Card>
+        <Card [course]="course"></Card>
         <br />
       </div>
     </div>

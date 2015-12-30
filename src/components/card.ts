@@ -1,11 +1,11 @@
 /**
  * Created by anto_belgin on 10/12/15.
  */
-import {Component, View} from 'angular2/core';
+import {Component, View , Input} from 'angular2/core';
 
 @Component({
-    selector: 'card',
-    properties: ['course: courseDetails']
+    selector: 'Card',
+    properties: ['course: course']
 })
 @View({
     template: `
@@ -17,4 +17,5 @@ import {Component, View} from 'angular2/core';
 `
 })
 export class Card {
+	//@Input() course : Object;
 }

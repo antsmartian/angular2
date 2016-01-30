@@ -1,11 +1,12 @@
 import {Component, View} from 'angular2/core';
 import {CourseDetailsService} from '../services/course';
+import {CurrencyService} from '../services/currency'
 import {NgIf, NgFor} from 'angular2/common'
 import {Card} from './card'
 
 @Component({
   selector: 'dashboard',
-  providers: [CourseDetailsService],
+  providers: [CourseDetailsService,CurrencyService],
   directives: [NgIf, NgFor, Card],
   template: `
         <div class="row">
@@ -22,9 +23,11 @@ import {Card} from './card'
 export class Dashboard {
   courses: Array<Object> = [];
 
-  constructor(service: CourseDetailsService) {
+  constructor(service: CourseDetailsService, currencyService : CurrencyService) {
     service.load().subscribe(courseDetails => {
       this.courses.push(courseDetails)
-    })
+    });
+
+    currencyService.setCurrencyValue();
   }
 }
